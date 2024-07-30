@@ -1,16 +1,13 @@
-# Dataset
-My data is in 
-
 ## Data structure
 - pix2pix: Data for pix2pix (organ generation) training
 - segmentation: Data for leaf segmentation training
 - src: original data (Blender's mask image and real plant image)
 - unetGAN: Data for unetGAN training
 
-## preparation
+## Preparation
 you copy data generated with Blender to ``src/syn_plant/<species name>``
 
-## code  
+## Code  
 ### src 
 ``proc_data.py`` (in ``syn_plant`` dir)
 **How to run**
