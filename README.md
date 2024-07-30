@@ -1,4 +1,4 @@
-# Project for Plant Phenomics revision
+# Structure-aware Image Generation
 
 - [Abstract Usage](##Abstract Usage)
   - [Docker Usage](###Docker Usage)
@@ -34,7 +34,5 @@ sh run.sh <title> <container_id>
 The running container only includes PyTorch and torchvision, so please refer to the README of each project to install the other requirements.
 
 
-
-
-
-
+### Dependency
+This project depends on [Segment Anything](https://github.com/facebookresearch/segment-anything), [MaskDINO](https://github.com/IDEA-Research/MaskDINO), [Grounded-SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything), and [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
