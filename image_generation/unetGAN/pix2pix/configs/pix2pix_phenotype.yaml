@@ -1,0 +1,33 @@
+## basic parameters
+# dataroot
+model: pix2pix
+input_nc: 3
+output_nc: 3
+ngf: 64
+ndf: 64
+netD: basic
+netG: unet_128
+n_layers_D: 3
+norm: batch
+init_type: normal
+init_gain: 0.02
+no_dropout: store_true
+load_dir: ./pix2pix/ckpt/
+
+# parameters
+dataset_mode: aligned
+direction: AtoB
+serial_batches: store_true
+num_threads: 4
+batch_size: 1
+max_dataset_size: float("inf")
+preproces: none
+no_filp: store_true
+display_winsize: 256
+
+# additional parameters
+epoch: 200
+verbose: store_true
+suffix: ''
+phase: test
+eval: False
